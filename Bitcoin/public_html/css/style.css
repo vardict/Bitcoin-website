@@ -1,0 +1,435 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 3, 2019, 12:19:01 PM
+    Author     : frontend
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/*FONTS:
+
+font-family: 'Rubik', sans-serif;
+
+*/
+
+
+img{
+    max-width: 100%;
+}
+
+body{
+    color: #5B6C94;
+    font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(180deg, #F8F9FC, #DADADA);
+}
+
+h2{
+    font-weight: 500;
+}
+
+p{
+    font-size: 16px;
+}
+
+.bg-bitcoin{
+    background-color: #313A5A;
+    height:100px;
+    width: auto;
+}
+
+.button{
+    color: #fff;
+    background-color: #1FDB84;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    margin-left: 36px;
+    box-shadow: 0 0 25px 5px rgba(31,219,132,0.6);
+}
+
+.navbar{
+    padding-top: 37px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.navbar-collapse{
+    padding: 0px 0;
+    background-color: #313A5A;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding:0;
+    margin-left: 36px;
+    line-height: 34px;
+    color:#fff;
+    text-align: end;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-item .nav-link:last-of-type{
+    margin-bottom: 7px;
+}
+
+/*Zanima me da li moze nekako button lakse da se pomeri da ne bi morala krzo sve responsive faze da namestam marginu?
+Takodje sam probala preko position:relative i preko margine*/
+.navbar-nav .nav-item button{
+    margin-left: 160px;
+    margin-bottom: 5px;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover
+{
+    border-bottom: 2px solid #1FDB84;
+    color: #fff;
+}
+
+.navbar-brand{
+    max-width: 50%;
+}
+
+.navbar-toggler span{
+    border: transparent;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #1FDB84;
+    border-radius: 3px;
+}
+
+.navbar-toggler span:last-of-type{
+    margin-bottom: 0;
+}
+
+/*Carousel*/
+
+.lead-section{
+    background-color: #313A5A;
+}
+
+/*DOTS*/
+
+.owl-dots .owl-dot span{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: transparent !important;
+    border: 2px solid #1FDB84;
+    position: relative;
+    left: -40px;
+}
+
+.owl-dots .owl-dot.active span{
+    background-color:#1FDB84 !important;
+}
+
+.slider .slider-title{
+    color: #fff;
+    font-size: 48px;
+    line-height: 57px;
+    margin-bottom: 40px;
+}
+
+.slider .slider-text{
+    color: #fff;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.slider .slider-button{
+    color: #fff;
+    background-color: #1FDB84;
+    width: 200px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 22px;
+    box-shadow: 7px 2px 35px 3px rgba(31,219,132,0.6);/*poigraj se jos malo sa ovim da se ne vidi zelena boja od sledeceg slidera*/
+}
+
+.slider .slider-item{
+    margin-top: 42px;
+}
+
+.slider li img{
+    margin-top: 42px;
+}
+
+
+/*Benefit section*/
+.benefit .benefit-items{
+    background-color: #fff;
+    border-radius: 6px;
+    position: relative;
+    padding: 66px 73px;
+    z-index: 2;
+    box-shadow: 7px 2px 35px 3px rgba(210,210,210,0.5);
+}
+
+.benefit .benefit-title{
+    font-weight: 500;
+    color: #031D5B;
+    line-height: 22px;
+    font-size: 18px;
+    padding-top: 26px;
+}
+
+.benefit .benefit-text{
+    line-height: 32px;
+    color: #5B6C94;
+    padding-right: 30px;
+    padding-top: 18px;
+}
+
+.benefit .benefit-line{
+    border-bottom: 4px solid #1FDB84;
+    display: inline-block;
+    width: 60px;
+}
+
+/*ANIMACIJA*/
+@keyframes slideTop{
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+.slide-top{
+    animation: slideTop 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.animation{
+    position: relative;
+    opacity: 0;
+}
+
+
+/*Pricing*/
+.pricing .pricing-title{
+    color: #32325C;
+    line-height: 59px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.pricing .pricing-items{
+    height: 665px;
+    width: 350px;
+    transition: 0.15s linear;
+    bottom: 0;
+    position: relative;
+    padding: 57px 0;
+}
+
+.pricing .pricing-items:hover{
+    box-shadow: 7px 2px 35px 3px rgba(83,83,83,0.1);
+    border-top: 3px solid #0A8AFF;
+    bottom: 20px;
+    background-color: #fff;
+}
+
+.pricing .title-two{
+    color: #32325C;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 31px;
+}
+
+.pricing .price{
+    font-size: 72px;
+    color: #1FDB84;
+    line-height: 64px;
+}
+
+/*Da li mozete da mi kazete kako sam mogla sa manje code-a da napisem posto se dosta stvai ponavlja*/
+.pricing .pricing-text-one{
+    letter-spacing: 0.18px;
+    line-height: 32px;
+    padding: 15px 21px;
+    margin-bottom: 85px;
+}
+
+.pricing .pricing-text-two{
+    letter-spacing: 0.18px;
+    line-height: 32px;
+    padding: 15px 21px;
+    margin-bottom: 54px;
+}
+
+.pricing .pricing-text-three{
+    letter-spacing: 0.18px;
+    line-height: 32px;
+    padding: 15px 21px;
+    margin-bottom: 54px;
+}
+
+.pricing .pricing-button{
+    color: #fff;
+    background-color: #1FDB84;
+    height: 60px;
+    width: 270px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    box-shadow: 0px 7px 30px 2px rgba(31,219,132,0.6);
+}
+
+
+/*Testimonials*/
+.customer .customer-title{
+    color: #031D5B;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.customer .customer-slider{
+    position: relative;
+    bottom: 45px;
+}
+
+.customer .owl-dots .owl-dot span{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: transparent !important;
+    border: 2px solid #1FDB84;
+    position: relative;
+    left: -5px;
+    margin-top: 71px;
+}
+
+.customer .owl-dots .owl-dot.active span{
+    background-color:#1FDB84 !important;
+}
+
+.customer .customer-image{
+    width: 63px;
+    height: 40px;
+}
+
+.customer .customer-green-items{
+    background-color: #1FDB84;
+    height: 500px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 36px;
+    border-radius: 6px;
+    box-shadow: 10px 5px 17px 0px rgba(31,219,132,0.6);
+
+}
+
+.customer .customer-green-text{
+    margin-top: 23px;
+    margin-bottom: 114px;
+}
+
+.customer .customer-green-text:nth-of-type(2){
+    font-weight: 500;
+}
+
+.customer .customer-white-items{
+    background-color: rgba(255,255,255,0.95);
+    font-size: 18px;
+    height: 500px;
+    color: #5B6C94;
+    line-height: 36px;
+    border-radius: 6px;
+    box-shadow: 10px 5px 17px 0px rgba(121,121,121,0.3);
+}
+
+.customer .customer-white-text{
+    margin-top: 23px;
+    margin-bottom: 114px;
+}
+
+.customer .customer-white-text:nth-of-type(2){
+    color: #031D5B;
+    font-weight: 500;
+}
+
+.customer .customer-slider .customer-green-text a{
+    color: #fff;
+    opacity: 80%;
+    margin-left: 30px;
+}
+.customer .customer-slider .customer-white-text a{
+    color: #031D5B;
+    opacity: 40%;
+    margin-left: 30px;
+}
+
+
+/*Gallery*/
+.gallery .gallery-items .zoom{
+    position: absolute;
+}
+.gallery .gallery-items .zoom-img{
+    display: none;
+    position: relative;
+    top: -155px;
+    left: 115px;
+}
+.gallery .gallery-items:hover .zoom-img{
+    display: block;
+}
+
+.gallery .gallery-items .gallery-items-2{
+    flex: 0 0 20%;
+}
+
+/*Clients section*/
+.client .client-title{
+    text-align: center;
+    color: #031D5B;
+    margin-bottom: 65px;
+    margin-top: 71px;
+}
+
+/*ANIMATON*/
+@keyframes zoom{
+    0%{
+        opacity:0;
+        transform: scale(0)
+    }
+    100%{
+        opacity:1;
+        transform:scale(1)
+    }
+}
+
+.zoom{
+    animation: zoom 1.3s linear;
+    animation-fill-mode: forwards;
+}
+
+
+/*Footer*/
+.footer .footer-items{
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.footer .footer-items a{
+    text-decoration: none;
+    color: #5B6C94;
+}
+
+.footer .footer-text{
+    text-align: center;
+    color: #5B6C94;
+}
+
+

@@ -1,0 +1,221 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 3, 2019, 12:19:09 PM
+    Author     : frontend
+*/
+
+
+/*
+
+> 0px   XS - NO NAME
+
+
+> 576px SM - small devices
+
+
+
+> 768px MD  - medium devices
+
+
+> 992px  LG    large devices
+
+
+
+> 1200px  XL   extra large devices
+
+*/
+
+
+@media(min-width:320px){
+
+    /*Navigation*/
+    .navbar-collapse{
+        padding: 0 10px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding:0 10px;
+    }
+
+    /*Benefit section*/
+    .benefit .benefit-items{
+        top: 0px;
+    }
+
+    /*CLIENT*/
+    .client .client-items{
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .client .client-items a img{
+        margin-bottom: 10px;
+    }
+
+    /*CUSTOMER*/
+    .customer .customer-title{
+        display: inline-block;
+        position: relative;
+        bottom: 200px;
+    }
+
+    .customer .customer-green-items{
+        width: 280px;
+        padding: 10px;
+    }
+
+    .customer .customer-white-items{
+        width: 280px;
+        padding: 10px;
+    }
+
+    /*Gallery*/
+    .gallery .gallery-items .gallery-items-2{
+        flex: 0 0 50%;
+    }
+
+    .gallery .gallery-items .zoom-img{
+        display: none;
+        position: relative;
+        top: -100px;
+        left: 35px;
+    }
+    .gallery .gallery-items:hover .zoom-img{
+        display: block;
+    }
+}
+
+
+@media( min-width:576px){
+
+    /*Navigation button*/
+    .navbar-nav .nav-item button{
+        margin-left: 380px;
+        margin-bottom: 5px;
+    }
+
+
+    /*Benefit section*/
+    .lead-section{
+        background-color: #313A5A;
+        height: 770px;
+    }
+
+    .benefit .benefit-items{
+        top: -100px;
+    }
+
+
+    /*CLIENT*/
+    .client .client-items a img{
+        padding: 15px;
+    }
+
+
+    /*CUSTOMER*/
+    .customer .customer-green-items{
+        width: 500px;
+        padding: 80px;
+    }
+
+    .customer .customer-white-items{
+        width: 500px;
+        padding: 80px;
+    }
+}
+
+
+
+
+@media(min-width:768px){
+
+    /*Navigation button*/
+    .navbar-nav .nav-item button{
+        margin-left: 560px;
+        margin-bottom: 5px;
+    }
+
+
+    /*CUSTOMER*/
+    .customer .customer-title{
+        display: inline-block;
+        position: relative;
+        top:10px;
+        right: 340px;
+        color: #031D5B;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .customer .customer-green-items{
+        width: 525px;
+    }
+
+    .customer .customer-white-items{
+        width: 525px;
+    }
+
+
+    /*CLIENT*/
+    .client .client-items a img{
+        padding: 0px;
+    }
+    
+    /*Gallery*/
+    .gallery .gallery-items .gallery-items-2{
+        flex: 0 0 20%;
+    }
+
+    .gallery .gallery-items .zoom-img{
+        display: none;
+        position: relative;
+        top: -125px;
+        left: 60px;
+    }
+}
+
+
+@media(min-width:992px){
+
+    /*Navigation button*/
+    .navbar-nav .nav-item button{
+        padding-left: 10px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+
+    /*Lead section*/
+    .slider .slider-item{
+        margin-top: 156px;
+    }
+
+    /*DOTS*/
+    .lead-section .owl-dots .owl-dot span{
+        top: -260px;
+    }
+
+}
+
+
+@media(min-width:1200px){
+    /*DOTS*/
+    .lead-section .owl-dots .owl-dot span{
+        top: -430px;
+    }
+
+    /*CLIENT*/
+    .client .client-items{
+        margin-bottom: 144px;
+    }
+    
+    .gallery .gallery-items .zoom-img{
+        display: none;
+        position: relative;
+        top: -155px;
+        left: 115px;
+    }
+}
